@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 기본수업</title>
+</head>
+<body>
+<!-- 주석
+h1~h6 태그 : 태그 사이의 내용을 굵은 글씨처리 및 글씨크기변화(h1가장크고 h6가장 작음)
+p 태그 : 문단 단위로 글씨를 표현할 때 사용
+br 태그 : 줄바꿈 해주는 태그
+pre 태그 : 태그사이의 내용을 그대로 화면에 출력. 여러공백, 줄바꿈을 인식
+hr 태그 : 수평선을 그어주는 태그 (웹브라우저 너비만큼)
+ -->
+	<h1>웹서버 수업전 HTML 공부</h1>
+	<p >Hello	<br/>
+	
+	
+	HTML</p>
+	<hr>
+<pre>
+pre태그에서 작성한 	내용들은
+
+
+여러 공백과 줄바꿈이 모두 인식된
+</pre>
+
+<!-- 
+리스트 : 항목 앞에 숫자나 기호가 붙는 태그
+<ol> : 항목 앞에 숫자가 붙는 순서있는 태그
+<ul> : 항목 앞에 기호가 붙은 순서없는 태그
+<li> : 리스트 태그 사이에 작성하는 것으로 항목을 추가할 때 사용
+ -->
+<ul>
+<li>순서없는 리스트의 요소 </li>
+<li> <h3>li태그의 또다른 태그를 넣을 수 있음</h3></li>
+<li> <b> 굵은글씨 처리 </b> 및 <i> 기울어진 글씨 처리</i> </li>
+</ul>
+
+<ol>
+<li> 순서있는 리스트 요소 </li>
+<li> 요소 앞에 아라비아 숫자가 기본값으로 붙음</li>
+<li> <a href="https://naver.com">네이버로 바로가기</a></li>
+</ol>
+
+<!-- a태그 : 다른페이지 또는 현재 페이지의 다른 위치로 이동할 때
+사용하는 태그. a태그는 이동할 페이지 주소를 href속성에 저장해야함 -->
+
+<a href="https://youtube.com" target = "_blank">
+유튜브로 바로가기</a>
+<br>
+<!-- img태그 : 문서상에 이미지를 띄울 때 사용하는 태그.
+띄울 이미지를 src속성에 작성. 그림의 원본사이즈가 아닌 특정사이즈로
+설정하고 싶을 때 width(너비), height(높이) 속성에 값을 입력.
+입력하는 값이 숫자-특정픽셀로 고정, 값이 %단위 - 열려있는 브라우저 사이즈에 비례 -->
+<a href = "https://google.com">
+	<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20161010_199%2Fgphealah_1476089489722TNNbw_PNG%2F%25B0%25ED%25BE%25E7%25C0%25CC_%25B9%25DF%25C5%25E9_%25BA%25FC%25C1%25FC_%25C1%25F5%25BB%25F3_1.PNG&type=b400" width="50%">
+</a>
+<!-- video태그 : 웹문서에 동영상을 띄울 때 사용하는 태그
+src 속성 : 화면에 띄울 동영상 정보를 작성 
+<video src="https://www.youtube.com/embed/tgbNymZ7vqY"></video>
+td,th는 열병합 : colspan / 행병합 : rowspan을 사용가능
+-->
+<table border="1" width = "100%">
+	<caption> 표제목을 붙이는 태그</caption>
+	<tr>
+		<td rowspan="2"> 1행1열 </td>
+		<th colspan="2"> 1행2열 </th>
+	</tr>
+	<tr>
+		<td> 1행1열 </td>
+		<td> 1행2열 </td>
+		<td> 2행3열 </td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+

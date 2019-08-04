@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{# 넘겨주는 값을 주석으로 다는 습관 result : p태그로 감싼 input태그들 #}
+<h3>답변항목 추가하기 페이지</h3>
+
+<form action="" method ='post'>
+	{% csrf_token %}
+	{{ result }}
+	<input type="submit" value="답변 추가">
+
+</form>
+
+<a href="{% url 'main' %">메인페이지로 이동하기</a>
+{%endblock%}
